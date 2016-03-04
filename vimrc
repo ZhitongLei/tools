@@ -20,6 +20,14 @@ set autoindent
 "显示标尺
 set ruler
 
+set nocp                    " 不设置 'compatible'"
+filetype plugin on          "允许使用插件"
+
+""""""""""""""""""""""""""""""
+" netrw setting
+" """"""""""""""""""""""""""""""
+let g:netrw_winsize = 25
+
 
 """"" 新建.c,.cpp,.cc,.h,.sh,.cpp,.cc,.py,.java文件，自动插入文件头 
 "侦测文件类型
