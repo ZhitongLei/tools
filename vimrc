@@ -5,7 +5,7 @@
 syntax enable
 syntax on
 
-"设置行号
+"设置行
 set number
 
 "高亮显示匹配的括号
@@ -16,9 +16,11 @@ set showmatch
 
 "设置缩进
 set tabstop=4
+set expandta
 
 "自动缩进
 set autoindent
+set shiftwidth=4
 
 "显示标尺
 set ruler
