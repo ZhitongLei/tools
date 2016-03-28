@@ -16,7 +16,7 @@ set showmatch
 
 "设置缩进
 set tabstop=4
-set expandta
+set expandtab
 
 "自动缩进
 set autoindent
