@@ -50,6 +50,11 @@ let g:netrw_alto = 1
 let g:netrw_altv = 1
 
 
+"=====================显示文本状态（模式、文件名、当前路径及行数）==================
+set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+set laststatus=2 " Always show the status line - use 2 lines for the status bar
+
+
 """"" 新建.c,.cpp,.cc,.h,.sh,.cpp,.cc,.py,.java文件，自动插入文件头 
 "侦测文件类型
 filetype on
