@@ -25,6 +25,12 @@ set shiftwidth=4
 "显示标尺
 set ruler
 
+" encoding
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set termencoding=utf-8
+set ffs=unix,dos,mac
+
 set nocp                    " 不设置 compatible
 filetype plugin on          " 允许使用插件
 
