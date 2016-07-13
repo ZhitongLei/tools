@@ -95,3 +95,16 @@ endfunc
 
 "新建文件后，自动定位到文件末尾
 autocmd BufNewFile * normal G
+
+
+""""""""""""""""""""""""""""""
+" plugin setting
+" """"""""""""""""""""""""""""
+" for pathogen
+call pathogen#infect()
+
+" for powerline
+" set guifont=PowerlineSymbols\ for\ Powerline
+" set nocompatible
+" set t_Co=256
+" let g:Powerline_symbols = 'fancy'
