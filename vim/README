@@ -1,1 +1,11 @@
-tools
+simple vim configuration, use the following plugins:
+    pathogen: for plugins management
+    NERDTree
+    powerline
+    (all can be download from github, see install.sh)
+
+install:
+    sh install.sh
+
+uninstall:
+    remove directory ~/.vim_runtime yourself
