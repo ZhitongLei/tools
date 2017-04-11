@@ -8,6 +8,8 @@ syntax on
 "设置行
 set number
 
+set hlsearch
+
 "高亮显示匹配的括号
 set showmatch
 
