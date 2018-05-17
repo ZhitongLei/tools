@@ -1,17 +1,10 @@
-""""""""""""""""""""""""""""""
-" basic setting
-""""""""""""""""""""""""""""""
 "设置语法高亮
 syntax enable
 syntax on
 
-"设置行
 set number
-
-set hlsearch
-
-"高亮显示匹配的括号
 set showmatch
+set hlsearch
 
 "突出显示当前行
 "set cursorline
@@ -21,6 +14,7 @@ set tabstop=4
 set expandtab
 
 "自动缩进
+set smartindent
 set autoindent
 set shiftwidth=4
 
@@ -33,12 +27,13 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set termencoding=utf-8
 set ffs=unix,dos,mac
 
+" plugin
 set nocp                    " 不设置 compatible
 filetype plugin on          " 允许使用插件
 
 """"""""""""""""""""""""""""""
 " netrw setting
-""""""""""""""""""""""""""""""
+" """"""""""""""""""""""""""""
 " absolute width of netrw window
 let g:netrw_winsize = 28
 
@@ -56,6 +51,7 @@ let g:netrw_browse_split = 4
 
 let g:netrw_alto = 1
 let g:netrw_altv = 1
+
 
 
 "=====================显示文本状态（模式、文件名、当前路径及行数）==================
@@ -98,19 +94,28 @@ endfunc
 "新建文件后，自动定位到文件末尾
 autocmd BufNewFile * normal G
 
-
-""""""""""""""""""""""""""""""
-" plugin setting
-""""""""""""""""""""""""""""""
 " for pathogen
-call pathogen#infect()
+execute pathogen#infect()
 
-" for NERDTree
-let g:NERDTreeDirArrowExpandable = '>' 
-let g:NERDTreeDirArrowCollapsible = '>' 
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = '~'
 
 " for powerline
 set guifont=PowerlineSymbols\ for\ Powerline
 set nocompatible
 set t_Co=256
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
+
+" for Syntastic
+" set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_c_remove_include_errors = 0
+"let g:syntastic_cpp_remove_include_errors = 1
+"let g:syntastic_cpp_compiler = 'g++'
+"let g:syntastic_cpp_compiler_options = '-std=c++11'
