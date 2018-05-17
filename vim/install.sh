@@ -9,6 +9,8 @@ WORKPLACE="$HOME/.vim_runtime"
 PATHOGEN_URL="https://github.com/tpope/vim-pathogen.git"
 NERDTREE_URL="https://github.com/scrooloose/nerdtree.git"
 POWERLINE_URL="https://github.com/Lokaltog/vim-powerline.git"
+CTRLP_URL="https://github.com/kien/ctrlp.vim.git"
+CPP_HIGHLIGHT="https://github.com/octol/vim-cpp-enhanced-highlight.git"
 
 mkdir $WORKPLACE
 cp ./vimrc $WORKPLACE
@@ -28,6 +30,12 @@ git clone "$NERDTREE_URL"
 echo "installing powerline..."
 git clone "$POWERLINE_URL"
 
+echo "installing ctrlp.vim..."
+git clone "$CTRLP_URL"
+
+echo "installing cpp-highlight..."
+git clone "$CPP_HIGHLIGHT"
+
 # backup
 if [ -e ~/.vimrc ]; then
     mv ~/.vimrc ~/.vimrc_old
@@ -37,4 +45,3 @@ echo 'set runtimepath+=~/.vim_runtime
 source ~/.vim_runtime/vimrc' > ~/.vimrc
 
 echo "Installed the Vim configuration successfully! Enjoy :-)"
-
